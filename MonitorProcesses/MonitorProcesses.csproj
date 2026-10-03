@@ -1,0 +1,7 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup><Configuration Condition="'$(Configuration)'==''">Debug</Configuration><Platform Condition="'$(Platform)'==''">AnyCPU</Platform><ProjectGuid>{E92FA497-DDB1-42AD-A760-B1269C08EBE8}</ProjectGuid><OutputType>WinExe</OutputType><RootNamespace>MonitorProcesses</RootNamespace><AssemblyName>MonitorProcesses</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><OutputPath>bin\$(Configuration)\</OutputPath><PlatformTarget>AnyCPU</PlatformTarget><Prefer32Bit>false</Prefer32Bit><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects></PropertyGroup>
+<PropertyGroup Condition="'$(Configuration)'=='Debug'"><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType></PropertyGroup><PropertyGroup Condition="'$(Configuration)'=='Release'"><Optimize>true</Optimize></PropertyGroup>
+<ItemGroup><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Drawing"/><Reference Include="System.Windows.Forms"/><Reference Include="System.Management"/><Reference Include="Microsoft.CSharp"/><Reference Include="UIAutomationClient"/><Reference Include="UIAutomationTypes"/><Reference Include="WindowsBase"/></ItemGroup>
+<ItemGroup><Compile Include="Program.cs"/><None Include="README.md"/><None Include="app.config"/></ItemGroup>
+<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>
